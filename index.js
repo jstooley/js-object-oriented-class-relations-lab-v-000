@@ -25,7 +25,7 @@ class Driver {
 
 class Passanger {
   let id_counter = 0;
-  constructer(name){
+  constructor(name){
     this.id = ++id_counter;
     this.name = name;
     store_passangers.push(this)
@@ -46,7 +46,7 @@ class Passanger {
 
 class Trip {
   let id_counter = 0;
-  constructer(driver,pass){
+  constructor(driver,pass){
     this.driver_id = driver.id
     this.passanger_id = pass.id
     this.id = ++id_counter
