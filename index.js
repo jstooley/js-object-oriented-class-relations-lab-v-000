@@ -7,7 +7,7 @@ class Driver {
   }
   trips(){
     return store.trips.find(trips => {
-      return trips.driver_id === this.id
+      return trips.driver_id === this.id;
     })
   }
 }
