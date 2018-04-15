@@ -6,9 +6,11 @@ class Driver {
   }
 }
 class Passanger {
-
+  constructer(){
+    
+  }
 }
 
 class Trip {
-  
+
 }
