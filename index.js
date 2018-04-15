@@ -20,4 +20,10 @@ class Trip {
     this.passanger_id = pass.id
     this.id = ++id_counter
   }
+
+  driver(){
+    return store.drivers.find(driver => {
+      return driver.id === this.driverId;
+    });
+  }
 }
