@@ -11,8 +11,8 @@ class Driver {
     return store.trips.filter(trip => {return trip.driverId === this.id});
   }
   passengers() {
-    let trips = this.trips();
-    return trips.map(trip => {
+
+    return this.trips().map(trip => {
       return trip.passenger();
     });
   }
