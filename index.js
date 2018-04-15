@@ -5,3 +5,6 @@ class Driver {
     this.id = ++id_counter
   }
 }
+class Passanger {
+  
+}
