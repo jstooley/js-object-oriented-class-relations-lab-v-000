@@ -18,17 +18,17 @@ class Driver {
 let passengerId = 0
 class Passenger {
   constructor(name) {
-    this.id = ++passengerId
-    this.name = name
-    store.passengers.push(this)
-  };
+    this.id = ++passengerId;
+    this.name = name;
+    store.passengers.push(this);
+  }
   trips(){
-    return store.trips.filter(trip => {return trip.passengerId = this.id})
-  };
+    return store.trips.filter(trip => {return trip.passengerId = this.id});
+  }
   drivers(){
-    return store.drivers.filter(driver => {return driver.passengerId = this.id})
-  };
-};
+    return store.drivers.filter(driver => {return driver.passengerId = this.id});
+  }
+}
 
 let tripId = 0
 class Trip {
