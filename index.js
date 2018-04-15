@@ -6,5 +6,9 @@ class Driver {
   }
 }
 class Passanger {
+
+}
+
+class Trip {
   
 }
