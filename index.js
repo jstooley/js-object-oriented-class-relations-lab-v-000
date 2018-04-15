@@ -5,6 +5,9 @@ class Driver {
     this.id = ++id_counter;
     store.drivers.push(this)
   }
+  trips(){
+    
+  }
 }
 class Passanger {
   let id_counter = 0;
