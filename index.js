@@ -28,13 +28,13 @@ class Passanger {
 
   trips(){
     return store.trips.find(trip => {
-      return trips.passanger_id === this.id;
+      return trip.passanger_id === this.id;
     })
   }
 
   drivers(){
     return this.trips().map(trip => {
-      return trip.driver
+      return trip.driver()
     })
   }
 }
