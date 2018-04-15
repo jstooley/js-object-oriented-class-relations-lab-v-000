@@ -9,6 +9,7 @@ class Passanger {
   let id_counter = 0;
   constructer(name){
     this.id = id_counter;
+    this.name = name;
   }
 }
 
