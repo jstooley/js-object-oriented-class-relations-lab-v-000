@@ -10,6 +10,7 @@ class Passanger {
   constructer(name){
     this.id = ++id_counter;
     this.name = name;
+    store_passangers.push(this)
   }
 }
 
