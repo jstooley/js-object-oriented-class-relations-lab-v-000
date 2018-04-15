@@ -19,10 +19,15 @@ class Passanger {
     this.name = name;
     store_passangers.push(this)
   }
+  
   trips(){
     return store.trips.find(trips => {
       return trips.passanger_id === this.id;
     })
+  }
+
+  drivers(){
+    
   }
 }
 
