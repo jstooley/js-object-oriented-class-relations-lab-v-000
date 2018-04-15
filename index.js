@@ -10,6 +10,12 @@ class Driver {
       return trips.driver_id === this.id;
     })
   }
+
+  passengers(){
+    return this.trips().map(trip => {
+      return trip.passenger();
+    });
+  }
 }
 
 class Passanger {
@@ -19,7 +25,7 @@ class Passanger {
     this.name = name;
     store_passangers.push(this)
   }
-  
+
   trips(){
     return store.trips.find(trips => {
       return trips.passanger_id === this.id;
@@ -27,7 +33,9 @@ class Passanger {
   }
 
   drivers(){
-    
+    return this.trips().map(drivers => {
+      return drivers.
+    })
   }
 }
 
