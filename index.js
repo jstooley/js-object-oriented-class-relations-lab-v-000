@@ -26,4 +26,10 @@ class Trip {
       return driver.id === this.driver_id;
     });
   }
+  
+  passenger(){
+    return store.passengers.find(passenger =>{
+      return passenger.id === this.passengerId;
+    })
+  }
 }
