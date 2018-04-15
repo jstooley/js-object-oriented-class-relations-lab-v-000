@@ -6,7 +6,8 @@ class Driver {
   }
 }
 class Passanger {
-  constructer(){
+  let id_counter = 0
+  constructer(name, ){
     
   }
 }
