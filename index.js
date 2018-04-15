@@ -6,7 +6,9 @@ class Driver {
     store.drivers.push(this)
   }
   trips(){
-    
+    return store.trips.find(trips => {
+      return trips.driver_id === this.id
+    })
   }
 }
 class Passanger {
