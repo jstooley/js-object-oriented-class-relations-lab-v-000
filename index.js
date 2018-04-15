@@ -11,6 +11,7 @@ class Driver {
     })
   }
 }
+
 class Passanger {
   let id_counter = 0;
   constructer(name){
