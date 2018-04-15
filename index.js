@@ -8,7 +8,7 @@ class Driver {
 class Passanger {
   let id_counter = 0;
   constructer(name){
-    this.id = id_counter;
+    this.id = ++id_counter;
     this.name = name;
   }
 }
@@ -16,6 +16,6 @@ class Passanger {
 class Trip {
   let id_counter = 0;
   constructer(){
-    
+    this.id = ++id_counter
   }
 }
